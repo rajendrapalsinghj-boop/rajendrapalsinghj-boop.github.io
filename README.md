@@ -1,3 +1,74 @@
 # rajendrapalsinghj-boop.github.io
 Hii🚩🚩
 <img src="photo1.jpg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uday Photo Gallery</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff0080, #6a00ff);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+        color: white;
+        text-align: center;
+    }
+
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+        margin-top: 25px;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        transition: 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Uday Thakur — Photo Gallery</h1>
+
+<div class="gallery">
+    <img src="img1.jpg" alt="">
+    <img src="img2.jpg" alt="">
+    <img src="img3.jpg" alt="">
+    <img src="img4.jpg" alt="">
+    <img src="img5.jpg" alt="">
+    <img src="img6.jpg" alt="">
+    <img src="img7.jpg" alt="">
+</div>
+
+</body>
+</html>
